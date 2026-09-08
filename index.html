@@ -11,7 +11,7 @@
 <meta name="description" content="생년월일과 출생시간을 바탕으로 오행과 성향을 살펴보는 사주 분석 페이지">
 <meta name="theme-color" content="#e7a0b1">
 <link rel="canonical" href="https://sajudohwadang.netlify.app/" />
-  <link rel="preload" as="image" href="background.webp" fetchpriority="high">
+  <link rel="preload" as="image" href="dohwadang_background.webp" fetchpriority="high">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;charset=UTF-8,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20width%3D%2264%22%20height%3D%2264%22%20rx%3D%2216%22%20fill%3D%22%23f4c0ce%22%2F%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%2224%22%20fill%3D%22%23fff8fa%22%20stroke%3D%22%23c95f7a%22%20stroke-width%3D%222%22%2F%3E%3Cg%20fill%3D%22%23e78fa7%22%20stroke%3D%22%23b94f6d%22%20stroke-width%3D%221.2%22%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2219%22%20r%3D%229%22%2F%3E%3Ccircle%20cx%3D%2244%22%20cy%3D%2228%22%20r%3D%229%22%2F%3E%3Ccircle%20cx%3D%2239%22%20cy%3D%2243%22%20r%3D%229%22%2F%3E%3Ccircle%20cx%3D%2225%22%20cy%3D%2243%22%20r%3D%229%22%2F%3E%3Ccircle%20cx%3D%2220%22%20cy%3D%2228%22%20r%3D%229%22%2F%3E%3C%2Fg%3E%3Ccircle%20cx%3D%2232%22%20cy%3D%2232%22%20r%3D%225%22%20fill%3D%22%23d39a52%22%2F%3E%3Ccircle%20cx%3D%2230.5%22%20cy%3D%2230.5%22%20r%3D%221.4%22%20fill%3D%22%23fff4c8%22%2F%3E%3C%2Fsvg%3E">
 <style>
 /* 메인 배경: 로딩 전에도 검은색/단색 화면이 튀지 않도록 핑크를 기본값으로 사용 */
@@ -547,7 +547,7 @@ body::before{
   inset:0 !important;
   z-index:0 !important;
   pointer-events:none !important;
-  background-image:url("background.webp") !important;
+  background-image:url("dohwadang_background.webp") !important;
   background-size:cover !important;
   background-position:center center !important;
   background-repeat:no-repeat !important;
@@ -670,7 +670,7 @@ button.compat-btn,.compat-actions button{background:#e7a0b1 !important;}
 <style id="dohwadang-background-and-input-fix">
 /* 도화당 새 메인 배경: 업로드된 벚꽃·학·연못 궁중풍 이미지를 그대로 사용 */
 html, body {
-  background: url("background.webp") center center / cover fixed no-repeat !important;
+  background: url("dohwadang_background.webp") center center / cover fixed no-repeat !important;
   min-height: 100%;
 }
 body {
@@ -682,7 +682,7 @@ body::before {
   inset: 0 !important;
   z-index: 0 !important;
   pointer-events: none !important;
-  background: url("background.webp") center center / cover no-repeat !important;
+  background: url("dohwadang_background.webp") center center / cover no-repeat !important;
   opacity: 1 !important;
   transform: none !important;
   animation: none !important;
@@ -993,6 +993,25 @@ if(e.key==="F12"||(e.ctrlKey&&e.shiftKey&&["i","j","c"].indexOf(k)>=0)){e.preven
 });
 })();
 </script>
+
+<style id="dohwadang-fixed-background">
+html, body {
+  background: url("dohwadang_background.webp") center center / cover fixed no-repeat !important;
+  min-height: 100%;
+}
+body::before {
+  content: "" !important;
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 0 !important;
+  pointer-events: none !important;
+  background: url("dohwadang_background.webp") center center / cover no-repeat !important;
+  opacity: 1 !important;
+  transform: none !important;
+  animation: none !important;
+}
+</style>
+
 </head>
 <body>
 
